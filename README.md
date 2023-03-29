@@ -1,3 +1,13 @@
+# Loan Amortization Calculator Service
+This project is a wrapper around [loan amortization library](https://github.com/ArtyomPanfutov/loan-amortization-calculator-service) and provides HTTP API to that library. </br>
+It provides a public docker image that you can host wherever you like.
+## How to run locally
+* Pull the image
+TBD
+* Start the container TBD
+
+## API Reference
+
 ## Micronaut 3.8.7 Documentation
 
 - [User Guide](https://docs.micronaut.io/3.8.7/guide/index.html)
