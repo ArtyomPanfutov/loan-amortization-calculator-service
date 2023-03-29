@@ -1,13 +1,13 @@
 package com.panfutov.loan.amortization
 
 import io.micronaut.runtime.Micronaut.run
-import io.swagger.v3.oas.annotations.*
-import io.swagger.v3.oas.annotations.info.*
+import io.swagger.v3.oas.annotations.OpenAPIDefinition
+import io.swagger.v3.oas.annotations.info.Info
 
 @OpenAPIDefinition(
     info = Info(
-            title = "loan-amortization-calculator-service",
-            version = "0.0"
+            title = "Loan Amortization Calculator",
+            version = "1.0.9"
     )
 )
 object Api {

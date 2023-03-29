@@ -8,8 +8,8 @@
             <pattern>%cyan(%d{HH:mm:ss.SSS}) %gray([%thread]) %highlight(%-5level) %magenta(%logger{36}) - %msg%n</pattern>
         </encoder>
     </appender>
-
-    <root level="info">
+    <logger name="paqua.loan.amortization" level="DEBUG" />
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

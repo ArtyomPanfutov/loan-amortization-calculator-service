@@ -1,6 +1,9 @@
 micronaut:
   application:
     name: loanAmortizationCalculatorService
+    jackson:
+      mapper:
+        ACCEPT_CASE_INSENSITIVE_ENUMS: true
   router:
     static-resources:
       swagger:

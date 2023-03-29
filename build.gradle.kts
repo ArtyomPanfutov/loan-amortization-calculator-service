@@ -6,7 +6,7 @@ plugins {
     id("io.micronaut.application") version "3.7.4"
 }
 
-version = "0.1"
+version = "1.0.9"
 group = "com.panfutov.loan.amortization"
 
 val kotlinVersion=project.properties.get("kotlinVersion")
@@ -15,6 +15,7 @@ repositories {
 }
 
 dependencies {
+    implementation("io.github.ArtyomPanfutov:loan-amortization-calculator:1.0.9")
     kapt("io.micronaut:micronaut-http-validation")
     kapt("io.micronaut.openapi:micronaut-openapi")
     implementation("io.micronaut:micronaut-http-client")
@@ -28,6 +29,8 @@ dependencies {
     implementation("io.micronaut:micronaut-validation")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi:4.8.5")
 
 }
 
