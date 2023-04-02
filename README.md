@@ -8,7 +8,8 @@ The native-image is built on GraalVM. Thus, it is suitable for serverless deploy
 
 ## Docker image
 The latest version is 1.0.9. </br>
-Docker image: `artyompanfutov/loan-amortization-calculator-service:1.0.9`
+Docker image: `artyompanfutov/loan-amortization-calculator-service:1.0.9` </br>
+The images exposes **8080 port** for HTTP requests.
 
 ## How to run locally
 Run the command to start container `docker-compose up`
