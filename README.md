@@ -3,7 +3,7 @@ This project is a wrapper around [loan amortization library](https://github.com/
 It provides a public docker image that you can host wherever you like.
 ## What's inside?
 The application uses Kotlin and Micronaut Framework.  </br>
-The images is built on GraalVM. Thus, it is suitable for serverless deployment scenarios since the startup time is fast.
+The native-image is built on GraalVM. Thus, it is suitable for serverless deployment scenarios since the startup time is fast.
 
 ## Docker image
 The latest version is 1.0.9. </br>
