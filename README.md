@@ -1,10 +1,16 @@
 # Loan Amortization Calculator Service
 This project is a wrapper around [loan amortization library](https://github.com/ArtyomPanfutov/loan-amortization-calculator) and provides HTTP API to that library. </br>
 It provides a public docker image that you can host wherever you like.
+## What's inside?
+The application uses Kotlin and Micronaut Framework.  </br>
+The images is built on GraalVM. Thus, it is suitable for serverless deployment scenarios since the startup time is fast.
+
+## Docker image
+The latest version is 1.0.9. </br>
+Docker image: `artyompanfutov/loan-amortization-calculator-service:1.0.9`
+
 ## How to run locally
-* Pull the image
-TBD
-* Start the container TBD
+Run the command to start container `docker-compose up`
 
 ## API Reference
 You can try API via swagger. It is available on path `/swagger-ui`, e.g.  `http://localhost:8080/swagger-ui`
@@ -100,3 +106,8 @@ When you don't want to repeat an early payment — set the repeating strategy to
 }
 ```
 </details>
+
+## How to build docker image
+You need to install GraalVM SDK before building the native image. </br>
+* Install SDK (UNIX) `sdk install java 22.3.r17-grl`
+* Build the image: `./gradlew dockerBuildNative`

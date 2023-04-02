@@ -54,6 +54,14 @@ tasks {
         }
     }
 }
+
+graalvmNative {
+    binaries {
+        named("main") {
+            buildArgs.add("-H:ReflectionConfigurationFiles=resources/reflect-config.json ")
+        }
+    }
+}
 graalvmNative.toolchainDetection.set(false)
 micronaut {
     runtime("netty")

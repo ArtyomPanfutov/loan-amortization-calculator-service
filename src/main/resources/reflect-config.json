@@ -1,0 +1,98 @@
+[
+  {
+    "name" : "paqua.loan.amortization.dto.Loan",
+    "queryAllDeclaredConstructors" : true,
+    "queryAllPublicConstructors" : true,
+    "fields" : [
+      { "name" : "name" },
+      { "name" : "rate" },
+      { "name" : "term" },
+      { "name" : "earlyPayments" },
+      { "name" : "firstPaymentDate" }
+    ],
+    "methods" : [
+      { "name" : "<init>", "parameterTypes" : [
+        "java.math.BigDecimal",
+        "java.math.BigDecimal",
+        "java.lang.Integer",
+        "java.util.Map",
+        "java.time.LocalDate"
+      ] },
+      { "name" : "getName", "parameterTypes" : [] },
+      { "name" : "getRate", "parameterTypes" : [] },
+      { "name" : "getTerm", "parameterTypes" : [] },
+      { "name" : "getEarlyPayments", "parameterTypes" : [] },
+      { "name" : "getFirstPaymentDate", "parameterTypes" : [] }
+    ]
+  },
+  {
+    "name" : "paqua.loan.amortization.dto.EarlyPayment",
+    "queryAllDeclaredConstructors" : true,
+    "queryAllPublicConstructors" : true,
+    "fields" : [
+      { "name" : "amount" },
+      { "name" : "strategy" },
+      { "name" : "repeatingStrategy" },
+      { "name" : "additionalParameters" }
+    ],
+    "methods" : [
+      { "name" : "<init>", "parameterTypes" : ["java.math.BigDecimal",
+        "paqua.loan.amortization.dto.EarlyPaymentStrategy",
+        "paqua.loan.amortization.api.impl.repeating.EarlyPaymentRepeatingStrategy",
+        "java.util.Map" ] },
+      { "name" : "getAmount" },
+      { "name" : "getStrategy" },
+      { "name" : "getRepeatingStrategy" },
+      { "name" : "getAdditionalParameters" }
+    ]
+  },
+  {
+    "name" : "paqua.loan.amortization.dto.LoanAmortization",
+    "queryAllDeclaredConstructors" : true,
+    "queryAllPublicConstructors" : true,
+    "fields" : [
+      { "name" : "monthlyPaymentAmount" },
+      { "name" : "overPaymentAmount" },
+      { "name" : "monthlyPayments" },
+      { "name" : "earlyPayments" }
+    ],
+    "methods" : [
+      { "name" : "<init>", "parameterTypes" : ["java.math.BigDecimal", "java.math.BigDecimal", "java.util.List", "java.util.Map" ] },
+      { "name" : "getMonthlyPaymentAmount" },
+      { "name" : "getOverPaymentAmount" },
+      { "name" : "getMonthlyPayments" },
+      { "name" : "getEarlyPayments" }
+    ]
+  },
+  {
+    "name" : "paqua.loan.amortization.dto.MonthlyPayment",
+    "queryAllDeclaredConstructors" : true,
+    "queryAllPublicConstructors" : true,
+    "fields" : [
+      { "name" : "monthNumber" },
+      { "name" : "loanBalanceAmount" },
+      { "name" : "debtPaymentAmount" },
+      { "name" : "interestPaymentAmount" },
+      { "name" : "paymentAmount" },
+      { "name" : "additionalPaymentAmount" },
+      { "name" : "paymentDate" }
+    ],
+    "methods" : [
+      { "name" : "<init>", "parameterTypes" : [
+        "java.lang.Integer",
+        "java.math.BigDecimal",
+        "java.math.BigDecimal",
+        "java.math.BigDecimal",
+        "java.math.BigDecimal",
+        "java.math.BigDecimal",
+        "java.time.LocalDate" ] },
+      { "name" : "getMonthNumber" },
+      { "name" : "getLoanBalanceAmount" },
+      { "name" : "getDebtPaymentAmount" },
+      { "name" : "getInterestPaymentAmount" },
+      { "name" : "getPaymentAmount" },
+      { "name" : "getAdditionalPaymentAmount" },
+      { "name" : "getPaymentDate" }
+    ]
+  }
+]
