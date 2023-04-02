@@ -1,6 +1,6 @@
 # Loan Amortization Calculator Service
 This project is a wrapper around [loan amortization library](https://github.com/ArtyomPanfutov/loan-amortization-calculator). The main purpose of the project is to provide HTTP API to that library. </br>
-It distributes a public docker image that you can host wherever you like.
+It distributed as a public docker image that you can host wherever you like.
 
 ## What's inside?
 The application uses Kotlin and Micronaut Framework.  </br>
