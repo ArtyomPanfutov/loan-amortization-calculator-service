@@ -1,10 +1,10 @@
 # Loan Amortization Calculator Service
 This project is a wrapper around [loan amortization library](https://github.com/ArtyomPanfutov/loan-amortization-calculator). The main purpose of the project is to provide HTTP API to that library. </br>
-It distributed as a public docker image that you can host wherever you like.
+It is distributed as a public docker image that you can host wherever you like.
 
 ## What's inside?
 The application uses Kotlin and Micronaut Framework.  </br>
-The native-image is built on GraalVM. Thus, it is suitable for serverless deployment scenarios since the startup time is fast.
+The native image is built on GraalVM. Thus, it is suitable for serverless deployment scenarios since the startup time is fast.
 
 ## Docker image
 The latest version is 1.0.9. </br>
@@ -15,7 +15,7 @@ The images exposes **8080 port** for HTTP requests.
 Run the command to start container `docker-compose up`
 
 ## API Reference
-You can try API via swagger. It is available on path `/swagger-ui`, e.g.  `http://localhost:8080/swagger-ui`
+You can try API via Swagger. It is available on path `/swagger-ui`, e.g.  `http://localhost:8080/swagger-ui`
 ![img.png](assets/img.png)
 ## Request example
 Look at the [request body](#request_body). This is a loan with two early payments.<br> 
